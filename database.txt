@@ -1,0 +1,25 @@
+provider username: voterapp@bais
+password: P@$$w0rD
+connUrl: jdbc:mysql://bais.mysql.database.azure.com/db
+Schema(database) name: db
+
+Table name: admin
+id: int
+username: varchar
+password: varchar
+manager: int 
+(0:not a manager
+ 1:is a manager)
+
+Table name: customer
+userid: int
+username: varchar
+password: varchar
+email: varchar
+voterstatus: int 
+(0:no information is submitted. 
+ 1:information was submitted and is being verified.
+ 2:information is valid and user becomes a voter.)
+realname: varchar
+ssn: int
+address: varchar
